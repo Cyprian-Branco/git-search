@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchComponent } from './search/search.component';
 import { UsersComponent } from './users/users.component';
+import { CompressPipe } from './compress.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { UsersComponent } from './users/users.component';
     HomeComponent,
     NavbarComponent,
     SearchComponent,
-    UsersComponent
+    UsersComponent,
+    CompressPipe
   ],
   imports: [
     BrowserModule,
