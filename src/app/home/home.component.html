@@ -9,25 +9,25 @@
 <div class="container">
     <div class="row ">
         <div class="col-md-6">
-            <img class="img-fluid" src="{{tyProfile.avatar_url}}" alt="my avatar">
+            <img class="img-fluid" src="{{userProfile.avatar_url}}" alt="my avatar">
             <span class="text-justify"></span>
         </div>
         <div class='body col-lg-8 col-md-8 col-sm-2 desc'>
-            <p>{{tyProfile.login}}</p>
-            <p>followers: {{tyProfile.followers}}</p>
-            <p>following: {{tyProfile.following}}</p>
+            <p>{{userProfile.login}}</p>
+            <p>followers: {{userProfile.followers}}</p>
+            <p>following: {{userProfile.following}}</p>
         </div>
 
         <div class="col-lg-6 col-md-6 col-sm-12">
             <div *ngFor="let tyRepos of tyRepos">
 
                 <div class="card-header">
-                    <h4>{{tyRepos.name | compress}} </h4>
+                    <h4>{{userRepos.name | compress}} </h4>
                 </div>
                 <div class="card-body">
-                    <p> {{tyRepos.description}}</p>
-                    <p appRedblack>Language(s): {{tyRepos.language}}</p>
-                <button type="button" name="button" class="btn btn-outline-warning"><a href='{{tyRepos.html_url}}'
+                    <p> {{userRepos.description}}</p>
+                    <p appRedblack>Language(s): {{userRepos.language}}</p>
+                <button type="button" name="button" class="btn btn-outline-warning"><a href='{{userRepos.html_url}}'
             target="_blank">View
             on GitHub</a></button>
             </div>
