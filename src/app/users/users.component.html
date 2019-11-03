@@ -1,1 +1,30 @@
 
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-3">
+            <input type="text" style="width:400px" placeholder="Search Username..." [(ngModel)]='username' name='username' (keyup)='searchUser($event.target.value)'>
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+<div class="container">
+    <div class="card col-lg-4 col-md-4 col-sm-12 offset-3">
+        <div class="card-body">
+            <div class="card-text">
+                <img class='avatar' src="{{user.avatar_url}}" style="max-height: 200px; border-radius:
+          100px;" alt="avatar">
+            </div>
+            <hr>
+            <a class='detail' href="{{user.html_url}}" target="_blank"><button class="btn btn-link">See
+          Profile</button></a>
+            <h3 class='detail' l>{{user.name}}</h3>
+            <p class='detail'>Followers<br><span>{{user.followers}}</span></p>
+            <p class='detail'>Following<br><span>{{user.following}}</span></p>
+            <p class='detail'>Repositories<br><span>{{user.public_repos}}</span></p>
+            <p class='detail'>{{user.bio}}</p>
+
+
+        </div>
+    </div>
+</div>
