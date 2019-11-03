@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchComponent } from './search/search.component';
-import { FormComponent } from './Users/form.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { FormComponent } from './Users/form.component';
     HomeComponent,
     NavbarComponent,
     SearchComponent,
-    FormComponent
+    UsersComponent
   ],
   imports: [
     BrowserModule,
