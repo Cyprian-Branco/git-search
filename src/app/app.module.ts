@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { UsersComponent } from './users/users.component';
 import { CompressPipe } from './compress.pipe';
 import { RepositoriesComponent } from './repositories/repositories.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RepositoriesComponent } from './repositories/repositories.component';
     NavbarComponent,
     UsersComponent,
     CompressPipe,
-    RepositoriesComponent
+    RepositoriesComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
