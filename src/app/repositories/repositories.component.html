@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-3">
+            <input type="text" style="width: 400px;" placeholder="Search Repository..." [(ngModel)]='username' name='username' (keyup)='searchUser($event.target.value)'>
+    
+        </div>
+    </div>
+    <br><hr>
+    <div class="row">
+        <div class="col-md-6" *ngFor='let repo of repos'>
+            <a class='text' href={{repo.html_url}} target="_blank">{{repo.name | compress}}</a>
+            <p>{{repo.description}}</p>
+            <p appRedblack>language(s) {{repo.language}}</p>
+        </div>
+    </div>
+</div>
