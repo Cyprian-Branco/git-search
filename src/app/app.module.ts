@@ -10,6 +10,8 @@ import { UsersComponent } from './users/users.component';
 import { CompressPipe } from './compress.pipe';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { ErrorComponent } from './error/error.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LanguageDirective } from './language.directive';
 
 @NgModule({
   declarations: [
@@ -19,11 +21,13 @@ import { ErrorComponent } from './error/error.component';
     UsersComponent,
     CompressPipe,
     RepositoriesComponent,
-    ErrorComponent
+    ErrorComponent,
+    LanguageDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule
   ],
   providers: [],

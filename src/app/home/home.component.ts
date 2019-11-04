@@ -20,13 +20,13 @@ export class HomeComponent implements OnInit {
   }
   getMyProfile(){
     this.userservice.getGithubUser(this.username).then((response)=>{
-      console.log('', response)
+      console.log(response)
       this.userProfile = response
     })
   }
   getMyRepos(){
     this.userservice.getGithubRepos(this.username).then((response)=>{
-      console.log('', response)
+      console.log(response)
       this.userRepos = response
     })
   }
