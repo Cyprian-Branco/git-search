@@ -11,24 +11,30 @@ export class HomeComponent implements OnInit {
   userRepos: any
   username = 'Cyprian-Branco'
 
-  constructor(private userservice: UserService) {
+  constructor(
+    private userservice: UserService
+  )  {
     this.getMyProfile()
     this.getMyRepos()
-   }
+  }
 
   ngOnInit() {
   }
+
   getMyProfile(){
-    this.userservice.getGithubUser(this.username).then((response)=>{
-      console.log( response)
-      this.userProfile = response
-    })
-  }
-  getMyRepos(){
-    this.userservice.getGithubRepos(this.username).then((response)=>{
-      console.log(response)
-      this.userRepos = response
-    })
-  }
+
+      this.userservice.getGithubUser(this.username).then((response)=>{
+        console.log(response)
+        this.userProfile = response
+      })
+    }
+
+  getMyRepos() {
+
+      this.userservice.getGithubRepos(this.username).then((response) => {
+        console.log(response)
+        this.userRepos = response
+      })
+    }
 
 }
