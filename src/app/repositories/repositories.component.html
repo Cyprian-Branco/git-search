@@ -10,7 +10,7 @@
         <div class="col-md-6" *ngFor='let repo of repos'>
             <a class='text' href={{repo.html_url}} target="_blank">{{repo.name | compress}}</a>
             <p>{{repo.description}}</p>
-            <p appRedblack>language(s) {{repo.language}}</p>
+            <p language>language(s) {{repo.language}}</p>
         </div>
     </div>
 </div>
