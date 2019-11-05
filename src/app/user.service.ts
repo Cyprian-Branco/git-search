@@ -30,8 +30,7 @@ export class UserService {
   getGithubRepos(username) {
     console.log(username);
     const promise = new Promise((resolve, reject) => {
-      this.http.get(environment.apiUrl + 'users/' + username +
-        '/repos?access_token=' + environment.accessToken).toPromise().then(response => {
+      this.http.get(environment.apiUrl + 'users/' + username + '/repos?access_token=' + environment.accessToken).toPromise().then(response => {
           this.repodata = response
           resolve(this.repodata);
         },
